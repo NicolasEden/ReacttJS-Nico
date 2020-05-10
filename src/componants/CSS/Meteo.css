@@ -1,0 +1,144 @@
+body {
+  background-image: url("../assets/2850815.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif
+}
+
+@keyframes slideIn {
+	to {
+        opacity: 1;
+        visibility: visible;
+        margin-top: 50px;
+  	}
+}
+@keyframes slideOut {
+	to {
+        opacity: 0;
+        display: none;
+        visibility: hidden;
+        margin-top: 200px;
+  	}
+}
+@keyframes slideInMeteo {
+    to {
+        opacity: 1;
+        visibility: visible;
+        margin-top: 100px;
+    }
+}
+
+.NotFoundWrapper {
+	max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 37.5%;
+    margin-right: auto; 
+    padding: 20px;
+    opacity: 0;
+    visibility: visible;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 200px;
+    top: 200px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.NotFoundWrapper2 {
+	max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 37.5%;
+    margin-right: auto; 
+    padding: 20px;
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 20px;
+    top: 200px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    animation-name: slideOut;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.MeteoBottom {
+    cursor: default;
+    position: relative;
+    margin-top: 180px;
+    margin-left: 250px;
+    font-size: 18px;
+    color: #ffffff;
+    opacity: 0;
+    animation-name: slideInMeteo;
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.MeteoDate {
+    margin-top: -20px;
+}
+.currentIcon {
+    margin: 0;
+    font-size: 100px;
+}
+.currentTop {
+    display: flex;
+    flex-direction: row;
+}
+.currentTopLeft {
+    margin-left: 25px;
+}
+.currentTopLeft p.currentTemp {
+    font-size: 40px;
+    margin: 0px;
+    margin-top: 20px;
+}
+.currentTopLeft p.currentMsg {
+    font-size: 25px;
+    margin: 0px;
+    margin-top: 0px;
+}
+.currentBottom {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 5px;
+}
+.currentBottomMain {
+    margin-top: 25px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.2);
+    opacity: 1;
+    height: 150px;
+    width: 87.5%;
+}
+.currentElement {
+    margin-top: 20px;
+    width: 400px;
+}
+.currentBottom p {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    opacity: 1;
+    color: #FFF;
+}
+.currentBottom2 p {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    opacity: 1;
+    color: #FFF;
+}
